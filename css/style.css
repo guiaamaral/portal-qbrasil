@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+body { font-family: 'Open Sans', sans-serif !important; }
+a:hover { text-decoration: none !important; }
+/* CABEÇALHO */
+header {
+	background: rgba(0,0,0,0.8);
+	position: relative;
+	height: 95px;
+	z-index: 1000;
+}
+header h1.logo {
+	background: url(../img/qbrasil.png) no-repeat top left;
+	width: 166px;
+	height: 63px;
+	text-indent: -9999px;
+	float: left;
+	margin: 16px 0 0;
+}
+header ul.nav {
+    margin: 3px 0px 0px;
+}
+header ul.nav-pills li a {
+	background: none !important;
+	color: #EEE !important;
+	margin: 0;
+}
+header ul.nav-pills li a:hover {
+	color: #FFF !important;
+}
+header ul.nav-pills li:first-child a {
+	padding-left: 0;
+}
+header ul.nav-pills li:last-child a {
+	padding-right: 0;
+}
+header ul.nav-pills .dropdown-menu {
+	background: rgba(0,0,0,0.8);
+	border-radius: 0;
+}
+header ul.nav-pills .dropdown-menu a:first-child {
+	padding-left: 20px;
+}
+header .store {
+	background: #0089d0;
+	height: 50px;
+	margin-top: 2px; 
+}
+header .store .quarter {
+	background: url(../img/quarter.png) no-repeat left;
+	height: 50px;
+	margin-left: -50px;
+	padding: 8px 0 0 60px ;
+}
+header .store .quarter a.loja {
+	color: #EEE !important;
+	margin-left: 43px;
+}
+header .store .quarter a.loja:hover {
+	color: #FFF !important;
+}
+header .store .search {
+	background: rgba(255,255,255,0.2);
+	width: 200px;
+}
+header .store .search input {
+	background: none;
+	border: none;
+	width: 158px !important;
+	height: 50px;
+	border-radius: 0;
+	color: #FFF;
+}
+header .store .search input:focus {
+	box-shadow: none;
+}
+header .store .search .btn-default {
+    color: #EEE;
+	background: none;
+	border: none;
+}
+header .store .search .btn-default:focus,
+header .store .search .btn-default:active {
+	background: rgba(255,255,255,0.1);
+	border-radius: 0;
+    color: #FFF;
+}
+header .store .search ::-webkit-input-placeholder { color: #EEE; }
+header .store .search :-moz-placeholder { color: #EEE; }
+header .store .search ::-moz-placeholder { color: #EEE; }
+header .store .search :-ms-input-placeholder { color: #EEE; }
+/* SLIDER */
+.carousel-top {
+    top: -95px;
+    margin-bottom: -80px;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+.carousel-inner > .item > img {
+    width: 100%;
+}
+.carousel-inner > .item .flex-video {
+	width: 1400px;
+	height: 585px;
+}
+.carousel-inner > .item .flex-video iframe {
+    width: 100%;
+    height: 100%;
+}
+#myCarousel1 {
+	margin-bottom: 20px;
+}
+#myCarousel1 .item {
+	padding: 0px 30px;
+	margin-left: 10px;
+}
+.carousel-control {
+	width: 3% !important;
+}
+.carousel-control.left,
+.carousel-control.left:hover,
+.carousel-control.left:focus,
+.carousel-control.left:active {
+	background: none !important;
+	text-shadow: none !important;
+	color: #666;
+}
+.carousel-control.right,
+.carousel-control.right:hover,
+.carousel-control.right:focus,
+.carousel-control.right:active {
+	left: auto;
+	right: 0;
+	background: none !important;
+	text-shadow: none !important;
+	color: #666;
+}
+.carousel-control {
+	padding-top:4.25%;
+	width:5%;
+}
+
+/* TÍTULOS */
+h1.title {
+	font-size: 32px;
+}
+.title {
+	padding-bottom: 20px;
+}
+
+/* CATEGORIAS */
+.card {
+    border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 0 15px 0px;
+	margin-bottom: 30px;
+}
+a .card {
+	color: #222;
+}
+a:hover .card {
+	color: #444;
+	text-decoration: none !important;
+}
+a:hover .card img {
+	opacity: 0.8;
+}
+.card img.category {
+	margin: 6px 0 -10px -16px;
+	width: 114%;
+}
+.unity {
+	padding: 20px 15px 0;
+	min-height: 200px;
+}
+.partner {
+	overflow: auto;
+}
+.partner img {
+	margin-top: 17%;
+}
+
+/* RODAPÉ */
+footer {
+	background: rgba(0,0,0,0.8);
+	color: #EEE;
+}
+footer h5 {
+	font-weight: 600;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+footer ul li {
+	list-style: none;
+	margin-left: 8px;
+}
+footer ul li a {
+	color: #EEE;
+}
+footer ul li a:hover {
+	color: #FFF;
+}
+footer .newsletter {
+	margin-left: 8px;
+}
